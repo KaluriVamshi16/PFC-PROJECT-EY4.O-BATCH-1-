@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <title>Personal Finance Chatbot</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+      <img src="{% static 'images/log.jpg' %}" alt="PFC Logo" height="85" style="width:auto;" />
+      <span>💰 PFC</span>
+    </div>
+
+    <!-- Centered Menu Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" data-section="home">Home</a></li>
+      <li><a href="#" data-section="about">About Us</a></li>
+      <li><a href="#" data-section="services">Services</a></li>
+      <li><a href="#" data-section="owners">Owners</a></li>
+      <li><a href="#" data-section="contact">Contact Us</a></li>
+    </ul>
+
+    <!-- Auth Buttons Top Right -->
+    <div class="auth-buttons">
+      <button class="btn" id="registerBtn">Register</button>
+      <button class="btn" id="loginBtn">Login</button>
+    </div>
+
+    <div class="menu_toggle" id="menu-btn">
+      <i class="ri-menu-line"></i>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1><span>PERSONAL FINANCE CHATBOT</span></h1>
+      <p>Take control of your finances with an AI-powered assistant. Track expenses, set budgets, and get smart insights to save more.</p>
+      <a href="#" class="btn" id="menu-features-btn">Explore Features <i class="ri-arrow-right-line"></i></a>
+      <div class="socials">
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-linkedin-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section" style="text-align: justify; line-height: 1.8; padding-top: 120px;">
+    <h2 style="text-align: center;">About Us</h2>
+
+    <p>Our Personal Finance Chatbot is a state-of-the-art AI-powered assistant designed to help you take full control of your finances. Whether you are a student, professional, or small business owner, it empowers you to manage your money smarter, track expenses, set budgets, and make informed financial decisions with ease.</p>
+
+    <p>Key Features of the Chatbot include:</p>
+    <ul>
+      <li><strong>Expense Tracking:</strong> Automatically log and categorize your daily expenses, giving you a clear picture of where your money is going.</li>
+      <li><strong>Budget Management:</strong> Set monthly budgets, receive notifications when limits are reached, and achieve your savings goals efficiently.</li>
+      <li><strong>Financial Dashboard:</strong> Visualize your spending patterns, income, and net savings through interactive charts and graphs.</li>
+      <li><strong>AI-Powered Insights:</strong> Receive personalized suggestions and tips to reduce unnecessary expenses and boost your savings.</li>
+      <li><strong>Goal Setting:</strong> Track both short-term and long-term financial goals with reminders and progress updates.</li>
+      <li><strong>Data Security:</strong> Your financial information is private and secure while receiving intelligent insights.</li>
+    </ul>
+
+    <p>Why choose our Personal Finance Chatbot?</p>
+    <ul>
+      <li>Save time by automating manual expense tracking and budgeting tasks.</li>
+      <li>Understand your spending behavior to make smarter financial choices.</li>
+      <li>Receive actionable AI recommendations tailored to your lifestyle and financial goals.</li>
+      <li>Maintain a complete overview of your financial health in one convenient platform.</li>
+      <li>Achieve financial stability and peace of mind with real-time insights.</li>
+    </ul>
+
+    <p>Our mission is to make financial management simple, intelligent, and stress-free. With the Personal Finance Chatbot, you no longer need to struggle with spreadsheets or complicated finance apps. Stay informed, stay organized, and take charge of your financial future with confidence and clarity.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section services" style="text-align: justify; line-height: 1.8; padding-top: 120px;">
+    <h2 style="text-align: center;">Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Expense Tracking</h3>
+        <p>Easily log and categorize daily expenses to see where your money goes.</p>
+      </div>
+      <div class="card">
+        <h3>Financial Dashboard</h3>
+        <p>Visualize spending trends and savings in clear, interactive charts.</p>
+      </div>
+      <div class="card">
+        <h3>Budget & Goals</h3>
+        <p>Set budgets and track your financial goals efficiently.</p>
+      </div>
+      <div class="card">
+        <h3>AI Insights</h3>
+        <p>Get intelligent tips to optimize spending and save more effectively.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Owners -->
+  <section id="owners" class="section" style="text-align: justify; line-height: 1.8; padding-top: 120px;">
+    <h2 style="text-align: center;">Owners</h2>
+    <br>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 50px;">
+      <div style="text-align: center;">
+        <p><strong>K. Vaishnavi</strong></p>
+        <p>Front-End Developer</p>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>K. Kishore</strong></p>
+        <p>Back-End Developer</p>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>K. Vamshi</strong></p>
+        <p>Team Lead & Web Integration</p>
+      </div>
+      <div style="text-align: center;">
+        <p><strong>B. Padmaja</strong></p>
+        <p>Database Manager</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact" style="text-align: justify; line-height: 1.8; padding-top: 120px;">
+    <h2 style="text-align: center;">Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Question" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Features Menu -->
+  <div id="features-menu" class="features-menu">
+    <h3>Features</h3>
+    <ul>
+      <li>Expense Tracking</li>
+      <li>Financial Dashboard</li>
+      <li>Budget & Goals</li>
+      <li>AI Insights</li>
+    </ul>
+  </div>
+
+  <!-- Register Modal -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Register</h2>
+
+    <form method="POST" action="/register/">
+      {% csrf_token %}
+
+      <label>Name</label>
+      <input type="text" name="username" placeholder="Enter your name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Enter password" required>
+
+      <label>Confirm Password</label>
+      <input type="password" name="confirm_password" placeholder="Confirm password" required>
+
+      <button type="submit" class="btn-form">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="#" id="toLogin">Login</a></p>
+  </div>
+</div>
+
+
+  <!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Login</h2>
+
+    <form method="POST" action="/login/">
+      {% csrf_token %}
+
+      <label>Username</label>
+      <input type="text" name="username" placeholder="Enter your username" required>
+
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Enter password" required>
+
+      <a href="#" class="forgot">Forgot password?</a>
+
+      <button type="submit" class="btn-form">Login</button>
+    </form>
+
+  </div>
+</div>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="{% static 'main.js' %}"></script>
+</body>
+</html>
